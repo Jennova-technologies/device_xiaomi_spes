@@ -99,7 +99,9 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.sounddose-vendor-impl \
     android.hardware.audio.service \
-    android.hardware.bluetooth.audio-impl
+    android.hardware.soundtrigger@2.3-impl \
+    android.hardware.bluetooth.audio-impl \
+    sound_trigger.primary.bengal:32
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
