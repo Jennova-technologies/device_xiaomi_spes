@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/flare_spes.mk
+    $(LOCAL_DIR)/infinity_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    flare_spes-user \
-    flare_spes-userdebug \
-    flare_spes-eng
+    infinity_spes-user \
+    infinity_spes-userdebug \
+    infinity_spes-eng
