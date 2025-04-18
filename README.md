@@ -1,3 +1,5 @@
+Those of you that think that "hiding" your updates or break them... This is open source, go fuck yourselves and you will gain nothing by not releasing source.
+
 ## Device Configuration for Xiaomi Redmi Note 11
 
 The Xiaomi Redmi Note 11 (codenamed _"spes/spesn"_) is a mid range smartphone from Xiaomi.
