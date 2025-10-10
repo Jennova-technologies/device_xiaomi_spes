@@ -19,21 +19,12 @@ git clone --depth=1 https://github.com/Jennova-technologies/vendor_xiaomi_spes -
 # Hardware/Xiaomi
 rm -fr hardware/xiaomi
 git clone https://github.com/Jennova-technologies/hardware_xiaomi hardware/xiaomi
-rm -fr hardware/xiaomi/vibrator/effect/Android.bp
-rm -fr hardware/xiaomi/hidl/touch/Android.bp
 
 # Debug Tools
 #git clone https://github.com/spes-development/hardware_samsung-extra_interfaces -b lineage-22 hardware/samsung-ext/interfaces
-
-# Fix build conflict linage sepolicy
-rm -f device/lineage/sepolicy/common/vendor/device.te
 
 # Sepolicy fix for imsrcsd
 echo -e "${color}Switch back to legacy imsrcsd sepolicy${end}"
 rm -rf device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/ims/imsservice.te
 cp device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/legacy-ims/hal_rcsservice.te device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/ims/hal_rcsservice.te
 
-# Rename conflicting qti_kernel_headers in source
-sed -i 's/"audio_kernel_headers"/"audio_kernel_headers_old"/g' hardware/qcom-caf/common/Android.bp
-sed -i 's/"qti_kernel_headers"/"qti_kernel_headers_old"/g' hardware/qcom-caf/common/Android.bp
-sed -i 's/"qti_kernel_headers"/"qti_kernel_headers_old"/g' vendor/infinity/build/soong/Android.bp
