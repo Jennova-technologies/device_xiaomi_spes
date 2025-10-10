@@ -17,6 +17,9 @@ PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/spes/spes-vendor.mk)
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 ifeq ($(wildcard hardware/xiaomi/Android.bp),)
 $(error Error: cannot found hardware/xiaomi repository, please clone it and try to build again!)
 endif
